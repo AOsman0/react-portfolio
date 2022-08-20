@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 import { AboutMe } from "./AboutMe";
 import { ContactMe } from "./ContactMe";
+import { Portfolio } from "./Porfolio";
 
 export const Header = () => {
   const [isAboutMe, setIsAboutMe] = useState(false);
@@ -98,8 +99,7 @@ export const Header = () => {
       <div>{isAboutMe && <AboutMe colour="red" firstName="Osman" />}</div>
       <div>{isContactMe && <ContactMe />}</div>
       {/* setting variable name to be true and rendering the contact function  */}
-      <div>{isContactMe && <li>Hey</li>}</div>
-      <div>{isPortfolioMe && <li>Hey</li>}</div>
+      <div>{isPortfolioMe && <Portfolio />}</div>
     </>
   );
 };

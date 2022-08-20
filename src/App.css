@@ -8,6 +8,15 @@
   --fern-green: #588157ff;
   --hunter-green: #3a5a40ff;
   --brunswick-green: #344e41ff;
+  --cultured: #f8f9faff;
+  --cultured-2: #e9ecefff;
+  --gainsboro: #dee2e6ff;
+  --light-gray: #ced4daff;
+  --cadet-blue-crayola: #adb5bdff;
+  --sonic-silver: #6c757dff;
+  --davys-grey: #495057ff;
+  --onyx: #343a40ff;
+  --eerie-black: #212529ff;
 }
 
 .nav-bar,
@@ -54,4 +63,20 @@ body {
 
 .isAboutMeImg {
   text-align: center;
+}
+
+.portfolio-title {
+  text-align: center;
+  color: var(--davys-grey);
+}
+.grid-container {
+  text-align: center;
+  align-items: center;
+}
+
+.github-link {
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--eerie-black);
 }
