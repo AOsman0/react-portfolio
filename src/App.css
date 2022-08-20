@@ -33,11 +33,12 @@ body {
 
 .about-me-info {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .skills {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .first-name {
@@ -49,4 +50,8 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
+}
+
+.isAboutMeImg {
+  text-align: center;
 }

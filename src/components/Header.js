@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import { AboutMe } from "./AboutMe";
-import { findAllByTestId } from "@testing-library/react";
+import { ContactMe } from "./ContactMe";
 
 export const Header = () => {
   const [isAboutMe, setIsAboutMe] = useState(false);
@@ -96,6 +96,7 @@ export const Header = () => {
       </Navbar>
       <br />
       <div>{isAboutMe && <AboutMe colour="red" firstName="Osman" />}</div>
+      <div>{isContactMe && <ContactMe />}</div>
       {/* setting variable name to be true and rendering the contact function  */}
       <div>{isContactMe && <li>Hey</li>}</div>
       <div>{isPortfolioMe && <li>Hey</li>}</div>
