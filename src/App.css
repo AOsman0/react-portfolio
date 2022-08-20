@@ -25,3 +25,28 @@
 body {
   background-color: var(--laurel-green);
 }
+
+.about-me-card {
+  color: var(--hunter-green);
+  background-color: var(--fern-green);
+}
+
+.about-me-info {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.skills {
+  text-align: center;
+}
+
+.first-name {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.about-me-body {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}

@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import { AboutMe } from "./AboutMe";
+import { findAllByTestId } from "@testing-library/react";
 
 export const Header = () => {
   const [isAboutMe, setIsAboutMe] = useState(false);
@@ -18,6 +19,10 @@ export const Header = () => {
 
   const handlePortfolioView = () => {
     console.log("clicked on portfolio");
+
+    setisPortfolioMe(!isPortfolioMe);
+    setIsAboutMe(false);
+    setIsContactMe(false);
   };
 
   const handleAboutMe = () => {
@@ -25,13 +30,19 @@ export const Header = () => {
     console.log("clicked");
     // calling the function and setting variable to be true
     setIsAboutMe(!isAboutMe);
+    setIsContactMe(false);
+    setisPortfolioMe(false);
+
+    // if isAboutMe is clicked set is contactMe To False
   };
 
-  const handleContactMe = () => {
+  const handleContactMe = async () => {
     // on click function
     console.log("clicked-on-contact");
     // calling the function and setting variable to be true
     setIsContactMe(!isContactMe);
+    setIsAboutMe(false);
+    setisPortfolioMe(false);
   };
 
   // contact function to be rendered
@@ -53,26 +64,29 @@ export const Header = () => {
               className="me-auto"
               onClick={handleAboutMe}
             >
-              {isAboutMe ? "Hide About Me" : "View AboutMe"}
+              {isAboutMe ? "Hide About Me" : "View About Me"}
+              {isAboutMe}
             </Nav.Link>
             <Nav.Link
               href="#contact"
               className="me-auto"
               onClick={handlePortfolioView}
             >
-              Portfolio
+              {isPortfolioMe ? "Hide Portfolio" : "View Portfolio"}
+              {isPortfolioMe}
             </Nav.Link>
             <Nav.Link
               href="#portfolio"
               className="me-auto"
               onClick={handleContactMe}
             >
-              View Contact Information
+              {isContactMe ? "Hide Contact Me" : "View Contact Me"}
+              {isContactMe}
             </Nav.Link>
             <Nav.Link href="#portfolio" className="me-auto">
               <a
                 className="me-auto"
-                href="https://drive.google.com/drive/folders/1wYdy6L-cLO_LW9MlBuOz7TYlMWaxB9oN?usp=sharing"
+                href="https://drive.google.com/file/d/19rPAfPuqbTWRAj-EtvZ7bFKv4PYFuY4i/view?usp=sharing"
               >
                 View Resume
               </a>
@@ -83,7 +97,8 @@ export const Header = () => {
       <br />
       <div>{isAboutMe && <AboutMe colour="red" firstName="Osman" />}</div>
       {/* setting variable name to be true and rendering the contact function  */}
-      <div>{isContactMe && contact()}</div>
+      <div>{isContactMe && <li>Hey</li>}</div>
+      <div>{isPortfolioMe && <li>Hey</li>}</div>
     </>
   );
 };
