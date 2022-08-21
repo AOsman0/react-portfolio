@@ -19,20 +19,24 @@
   --eerie-black: #212529ff;
 }
 
-.nav-bar,
-.me-auto {
+.nav-bar {
   background-color: var(--brunswick-green);
-  font-size: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links {
   color: var(--timberwolf);
   text-decoration: none;
+  font-size: 2rem;
   margin-inline: 2.7rem;
+  justify-content: space-between;
 }
 
 body {
-  background-color: var(--laurel-green);
+  background-color: var(--fern-green);
 }
 
 .about-me-card {
@@ -43,6 +47,7 @@ body {
 .about-me-info {
   text-align: center;
   font-size: 1.5rem;
+  color: var(--eerie-black);
 }
 
 .skills {
@@ -67,7 +72,7 @@ body {
 
 .portfolio-title {
   text-align: center;
-  color: var(--davys-grey);
+  color: var(---eerie-black);
 }
 .grid-container {
   text-align: center;
@@ -79,4 +84,45 @@ body {
   text-align: center;
   font-size: 0.8rem;
   color: var(--eerie-black);
+}
+
+.skills {
+  color: var(--eerie-black);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--eerie-black);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.form-control {
+  width: 20rem;
+  height: 2rem;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+.btn {
+  background-color: var(--light-gray);
+  width: 10rem;
+  align-items: center;
+  margin: 0%;
+}
+
+.message {
+  width: 25rem;
+  height: 10rem;
+  text-align: center;
+}
+
+.submit-btn {
+  padding-top: 1.5rem;
+}
+
+.form-header {
+  text-align: center;
+  color: var(---eerie-black);
 }

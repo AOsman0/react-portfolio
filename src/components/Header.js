@@ -1,6 +1,6 @@
 import "../App.css";
 import { useState } from "react";
-import Container from "react-bootstrap/Container";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -58,42 +58,40 @@ export const Header = () => {
   return (
     <>
       <Navbar className="nav-bar">
-        <Container>
-          <Nav className="me-auto">
-            <Nav.Link
-              href="#about-me"
-              className="me-auto"
-              onClick={handleAboutMe}
+        <Nav className="me-auto nav-bar">
+          <Nav.Link
+            href="#about-me"
+            className="me-auto nav-links"
+            onClick={handleAboutMe}
+          >
+            {isAboutMe ? "Hide About Me" : "View About Me"}
+            {isAboutMe}
+          </Nav.Link>
+          <Nav.Link
+            href="#contact"
+            className="me-auto nav-links"
+            onClick={handlePortfolioView}
+          >
+            {isPortfolioMe ? "Hide Portfolio" : "View Portfolio"}
+            {isPortfolioMe}
+          </Nav.Link>
+          <Nav.Link
+            href="#portfolio"
+            className="me-auto nav-links"
+            onClick={handleContactMe}
+          >
+            {isContactMe ? "Hide Contact Me" : "View Contact Me"}
+            {isContactMe}
+          </Nav.Link>
+          <Nav.Link href="#portfolio" className="me-auto">
+            <a
+              className="me-auto nav-links"
+              href="https://drive.google.com/file/d/19rPAfPuqbTWRAj-EtvZ7bFKv4PYFuY4i/view?usp=sharing"
             >
-              {isAboutMe ? "Hide About Me" : "View About Me"}
-              {isAboutMe}
-            </Nav.Link>
-            <Nav.Link
-              href="#contact"
-              className="me-auto"
-              onClick={handlePortfolioView}
-            >
-              {isPortfolioMe ? "Hide Portfolio" : "View Portfolio"}
-              {isPortfolioMe}
-            </Nav.Link>
-            <Nav.Link
-              href="#portfolio"
-              className="me-auto"
-              onClick={handleContactMe}
-            >
-              {isContactMe ? "Hide Contact Me" : "View Contact Me"}
-              {isContactMe}
-            </Nav.Link>
-            <Nav.Link href="#portfolio" className="me-auto">
-              <a
-                className="me-auto"
-                href="https://drive.google.com/file/d/19rPAfPuqbTWRAj-EtvZ7bFKv4PYFuY4i/view?usp=sharing"
-              >
-                View Resume
-              </a>
-            </Nav.Link>
-          </Nav>
-        </Container>
+              View Resume
+            </a>
+          </Nav.Link>
+        </Nav>
       </Navbar>
       <br />
       <div>{isAboutMe && <AboutMe colour="red" firstName="Osman" />}</div>
