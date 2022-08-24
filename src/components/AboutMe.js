@@ -20,7 +20,7 @@ export const AboutMe = ({ firstName, colour }) => {
         </p>
         <hr />
         <div className="isAboutMeImg">
-          <img src={profileMe} alt={colour} />
+          <img src={profileMe} alt={colour} width="500rem" />
         </div>
       </div>
     </div>

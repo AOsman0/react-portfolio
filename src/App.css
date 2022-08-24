@@ -30,9 +30,9 @@
 .nav-links {
   color: var(--timberwolf);
   text-decoration: none;
-  font-size: 2rem;
-  margin-inline: 2.7rem;
+  font-size: 1.5rem;
   justify-content: space-between;
+  text-align: center;
 }
 
 body {
@@ -125,4 +125,50 @@ body {
 .form-header {
   text-align: center;
   color: var(---eerie-black);
+}
+
+.email-message {
+  color: red;
+  padding-top: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.name-change {
+  color: red;
+  font-size: 5rem;
+}
+
+.container {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+.first-slide {
+  text-align: center;
+  opacity: 10;
+}
+
+.carousel-text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.interest-image {
+  text-align: center;
+}
+
+.my-interest {
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+
+.my-interest-title {
+  font-size: 4rem;
+  color: whitesmoke;
 }

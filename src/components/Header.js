@@ -7,6 +7,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { AboutMe } from "./AboutMe";
 import { ContactMe } from "./ContactMe";
 import { Portfolio } from "./Porfolio";
+import { Introduction } from "./Introduction";
+
+// import the toggle icon
+
+// on click of this toggle icon hide the nav bar
 
 export const Header = () => {
   const [isAboutMe, setIsAboutMe] = useState(false);
@@ -93,6 +98,7 @@ export const Header = () => {
           </Nav.Link>
         </Nav>
       </Navbar>
+
       <br />
       <div>{isAboutMe && <AboutMe colour="red" firstName="Osman" />}</div>
       <div>{isContactMe && <ContactMe />}</div>

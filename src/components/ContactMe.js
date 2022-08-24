@@ -17,7 +17,7 @@ export const ContactMe = () => {
     console.log("hello contact");
 
     const regEx =
-      "^[a-zA-Z0-9.! #$%&'*+/=? ^_`{|}~-]+@[a-zA-Z0-9-]+(?:. [a-zA-Z0-9-]+)*$/";
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if (!emailInput.match(regEx)) {
       console.log("email");
@@ -68,7 +68,7 @@ export const ContactMe = () => {
             <Button variant="contained" color="success" type="submit">
               Submit
             </Button>
-            {emailMessage}
+            <div className="email-message">{emailMessage}</div>
           </div>
         </Form.Group>
       </Form.Group>
