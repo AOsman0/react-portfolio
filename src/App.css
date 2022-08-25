@@ -19,6 +19,10 @@
   --eerie-black: #212529ff;
 }
 
+body {
+  background-color: var(--brunswick-green);
+}
+
 .nav-bar {
   background-color: var(--brunswick-green);
   display: flex;
@@ -33,10 +37,6 @@
   font-size: 1.5rem;
   justify-content: space-between;
   text-align: center;
-}
-
-body {
-  background-color: var(--fern-green);
 }
 
 .about-me-card {
@@ -64,6 +64,10 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
+}
+
+.is-about-me {
+  background-color: var(--hunter-green);
 }
 
 .isAboutMeImg {
@@ -171,4 +175,23 @@ body {
 .my-interest-title {
   font-size: 4rem;
   color: whitesmoke;
+}
+
+.carousel-text {
+  color: var(--timberwolf);
+}
+
+.first-name {
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-img {
+    text-align: center;
+    width: 20rem;
+  }
+
+  .is-about-me {
+    background-color: var(--fern-green);
+  }
 }
