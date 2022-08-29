@@ -2,6 +2,34 @@
 
 This project was bootstrapped with [My Portfolio Link](https://AOsman0.github.io/react-portfolio).
 
+## Video WalkThrough
+
+```
+https://drive.google.com/drive/folders/1BESE_89w0r9OJ8ZdAhbaur8uUHRTI9Id?usp=sharing
+
+```
+
+## Screenshot
+
+![screenshot-1](./src/images/Screenshot%202022-08-29%20at%2010.54.59.png)
+![screenshot-2](./src/images/Screenshot%202022-08-29%20at%2010.55.09.png)
+![screenshot-3](./src/images/Screenshot%202022-08-29%20at%2010.55.13.png)
+![screenshot-4](./src/images/Screenshot%202022-08-29%20at%2010.55.17.png)
+
+## Technology Used
+
+GitHub
+Terminal
+VSCode
+React
+CSS
+
+## Contact Me
+
+[Email Me - 📧](osmana9987@gmail.com)
+
+[GitHub - 🖥️](https://github.com/AOsman0)
+
 ## Available Scripts
 
 In the project directory, you can run:
