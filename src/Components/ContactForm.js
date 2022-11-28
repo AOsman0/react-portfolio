@@ -99,12 +99,8 @@ export const ContactForm = () => {
         >
           CV
         </a>
-        <a href="https://github.com/AOsman0">
-          <FaGithub />
-        </a>
-        <a href="https://www.linkedin.com/in/abdirahman-osman-a6b165250/">
-          <FaLinkedin />
-        </a>
+        <FaGithub href="https://github.com/AOsman0" />
+        <FaLinkedin href="https://www.linkedin.com/in/abdirahman-osman-a6b165250/" />
       </div>
     </div>
   );
