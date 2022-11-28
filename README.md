@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AWS Deployed Link ("https://dev3046.d2wl5l0jlxzr0m.amplifyapp.com")
 
 ## Available Scripts
 
