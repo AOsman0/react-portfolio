@@ -1,7 +1,5 @@
 # Getting Started with Create React App
 
-AWS Deployed Link ("https://dev3046.d2wl5l0jlxzr0m.amplifyapp.com")
-
 ## Available Scripts
 
 In the project directory, you can run:
