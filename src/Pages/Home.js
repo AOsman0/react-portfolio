@@ -1,5 +1,4 @@
 import MyImage from "../Images/my-profile.jpeg";
-import Typed from "react-typed";
 
 export const Home = () => {
   const myInspiration = [
@@ -17,17 +16,13 @@ export const Home = () => {
           alt="image of my self"
         />
       </div>
-      <div className="text-center text-slate-700 font-bold text-xl mt-2">
+      <div className="text-center text-slate-700 font-bold text-xl mt-2 space-y-6">
         <h1 className="mt-4 mb-4">
           Hello <span class="animate-[wave_5s_ease-in-out_2]">👋🏽</span> My Name
           Is Osman
         </h1>
-        <Typed
-          strings={["Full Stack Developer 💻", "I Love Coffee ☕"]}
-          typeSpeed={75}
-          backSpeed={75}
-          loop
-        ></Typed>
+        <li class="list-none">Full Stack Developer 💻</li>
+        <li class="list-none">I ❤️ Coffee ☕</li>
       </div>
       <div className="mt-6 pt-4">
         <h1 className="font-bold text-center pb-2 text-xl text-gray-500">
